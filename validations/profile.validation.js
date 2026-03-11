@@ -14,4 +14,6 @@ const changePasswordSchema = Joi.object({
   confirmPassword: Joi.string().valid(Joi.ref('newPassword')).required(),
 })
 
+
+
 module.exports = { updateProfileSchema, changePasswordSchema }
